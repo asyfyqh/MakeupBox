@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+    </style>
+
+
+<body>
+  <!-- header section start page -->
+<header class="header">
+  <img class="image-logo" src="https://cdn-icons-png.flaticon.com/512/7140/7140271.png">
+
+  <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="index.html">Blog</a>
+      <a href="#" onclick=self.close()>Exit</a>
+  </nav>
+</header>
+<section class="paddingextra">
+  <div class="login-wrapper">
+    <form action="#" class="form">
+      <img src="https://cdn-icons-png.flaticon.com/512/1807/1807383.png" alt="">
+      <h2>PINK PURE BEAUTY 💄</h2>
+      <p style="font-size:18px ;">You can search for the makeup by brand and category here</p>
+      <br>
+
+      
+<!--user input Brand and Category-->
+      <div class="input-group">
+        <br>
+        <form action="#">
+        <label style="font-size:15px ;">Enter Makeup Brand and Category:</label><br>
+        <select name="Brand" id="brand">
+        <option value="select">Select a Brand</option>
+        <option value="colourpop">colourpop</option>
+        <option value="marienatie">marienatie</option>
+        <option value="wet n wild">wet n wild</option>
+        <option value="nyx">nyx</option>
+        <option value="dior">dior</option>
+        <option value="maybelline">maybelline</option>
+        </select>
+      </form>
+      <br>
+
+      <form action="#">
+        <select name="Category" id="category">
+          <option value="select">Select a Category</option>
+          <option value="lipstick">lipstick</option>
+          <option value="foundation">foundation</option>
+          <option value="eyeliner">eyeliner</option>
+          <option value="mascara">mascara</option>
+          <option value="eyeshadow">eyeshadow</option>
+        </select>
+      </form>
+      <button onclick="buttonClicked()">Search</button>
+       
+    </form>
+    <br><br>
+  </div>
+  </section>
+
+  <!--Display at form-->
+  <div class="login-wrapper1">
+  <div id="data">
+  </div>
+  <!--div style="display:flex ;">
+  <div class="login-wrapper">
+    <form action="" class="form">
+      <h2 style="font-size:20px ;" id="">${data.name}</h2>
+              <br>
+        
+              <div id="prprice">Price:$ ${data.price}</div>
+              <br>
+        
+              <div id="prtype">Product Type: ${data.category} </div>
+              <br>
+        
+              <div id="">Rating⭐️: ${data.rating} </div>
+              <br>
+        
+              <div  style="text-align: justify;" id="">Description: ${data.description}</div>
+              <br>
+        
+              <div id="">Product Link: ${data.product_link}</div>
+              <br>
+    </form>
+  </div>
+  </div-->
+</div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
